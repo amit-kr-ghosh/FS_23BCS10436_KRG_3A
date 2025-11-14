@@ -1,0 +1,330 @@
+/* Checkbox Custom Styling */
+.form-check-input {
+  border-color: #cccccc;
+  background-color: transparent;
+}
+
+.form-check-input:checked {
+  background-color: #7b2cbf;
+  border-color: #ffffff;
+}
+
+/*  General Hover Effects */
+.task-name:hover,
+.icon:hover {
+  color: #e0e0e0;
+}
+
+.icon {
+  transition: color 0.3s;
+  color: #b0b0b0;
+}
+
+/*  Override for Task Checkbox */
+.task-item input[type="checkbox"] {
+  background-color: #1f1f1f;
+  border-color: #7b7b7b;
+}
+
+/*  Task Text (modernized & responsive) */
+.task-text {
+  font-size: 1.25rem;
+  margin-left: 1rem;
+  font-weight: 500;
+  color: #f5f5f5;
+}
+
+/* ✨ Completed Task Style — lighter and readable */
+.task-completed {
+  color: #d6d6d6 !important; /* brighter grey for visibility */
+  text-decoration: line-through;
+  opacity: 0.9;
+}
+
+/*  Card Divider in Details */
+.detail-card {
+  border-right: 2px solid #2f2f2f;
+}
+
+@media (max-width: 576px) {
+  .detail-card {
+    border-right: none;
+  }
+}
+
+/* 🌟 MODERN TASK DASHBOARD DESIGN */
+.task-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e1e2f, #2a1443);
+  color: #e8e8e8;
+}
+
+/* 🧊 Glass Effect */
+.glass-effect {
+  background: rgba(40, 40, 55, 0.6);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease;
+}
+
+.glass-effect:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* 📋 Main Task Card */
+.task-card-main {
+  max-width: 800px;
+  width: 100%;
+  padding: 25px;
+  color: #e6e6e6;
+}
+
+/* 📌 Header with Add Button */
+.task-card-main .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-add {
+  padding: 8px 16px;
+  background: #4caf50;
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn-add:hover {
+  background: #3e8e41;
+}
+
+/* 🗂 Each Task Box */
+.task-item {
+  margin-top: 15px;
+  padding: 15px;
+  background: rgba(60, 60, 75, 0.6);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.task-item:hover {
+  background: rgba(80, 80, 100, 0.7);
+}
+
+/* 🎯 Task Buttons */
+.task-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn-icon {
+  padding: 5px;
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #bdbdbd;
+}
+
+.btn-icon:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.btn-icon.delete:hover {
+  color: #ff5555;
+}
+
+/* 🧩 Task Content Layout */
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* ⏱ Timestamp */
+.task-time {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  color: #b0b0b0;
+}
+
+/* 😌 No Task Text */
+.no-task {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #aaaaaa;
+}
+
+/* 🌈 GLASS NAVBAR */
+.glass-nav {
+  background: linear-gradient(90deg, rgba(40, 40, 60, 0.85), rgba(60, 40, 80, 0.85));
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px 0;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+/* 🏷 Brand Name */
+.brand-text {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #f2f2f2;
+  letter-spacing: 0.5px;
+}
+
+/* 🔗 Navbar Links */
+.custom-link {
+  color: #dddddd !important;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.custom-link:hover,
+.custom-link.active {
+  color: #ffb703 !important;
+}
+
+/* ✨ Underline Animation */
+.custom-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ffb703;
+  transition: width 0.3s ease;
+}
+
+.custom-link:hover::after,
+.custom-link.active::after {
+  width: 100%;
+}
+
+/* 📱 Mobile Toggle Visibility */
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* 🌈 SIGNUP + LOGIN SHARED BACKGROUND */
+.signup-page,
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1c1c2e, #301c4f);
+  padding: 40px 0;
+}
+
+/* 🧊 Glass Form Container */
+.glass-effect {
+  background: rgba(40, 40, 55, 0.6);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  color: #eaeaea;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+/* ✨ Smooth Fade Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade {
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* 🧍‍♂️ Glass Input Fields */
+.glass-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e8e8e8;
+  transition: all 0.3s ease;
+}
+
+.glass-input::placeholder {
+  color: rgba(200, 200, 200, 0.8);
+}
+
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #ffb703;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 183, 3, 0.3);
+}
+
+/* ⚠️ Error Messages */
+.invalid-feedback {
+  color: #ffb703;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+/* 🟢 Buttons */
+.btn-primary {
+  background-color: #4caf50;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3e8e41;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.4);
+}
+
+/* 🟡 Link Hover Effects */
+.text-warning {
+  cursor: pointer;
+  transition: color 0.2s ease;
+  color: #ffb703;
+}
+
+.text-warning:hover {
+  text-decoration: underline;
+  color: #ffd166;
+}
+
+/* 💬 Gradient Title Text */
+.gradient-text {
+  background: linear-gradient(90deg, #ffb703, #fb8500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 🧠 Utility Fix */
+.min-vh-90 {
+  min-height: 90vh !important;
+}

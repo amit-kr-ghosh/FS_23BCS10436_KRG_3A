@@ -1,0 +1,88 @@
+/* 🌈 Homepage Background (Dark Gradient) */
+.home-container {
+  background: linear-gradient(135deg, #1e1e2f, #2a1443);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eaeaea;
+}
+
+/* ✨ Gradient Text (Enhanced for Dark Mode) */
+.gradient-text {
+  background: linear-gradient(90deg, #ffd166, #ffb703);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* 🌟 Subtle Fade Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* 🧊 Glass Effect Card (Dark Mode) */
+.home-container .glass-effect {
+  background: rgba(40, 40, 55, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  color: #f0f0f0;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.home-container .glass-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+/* 🟢 Button Styling (Modern + Subtle Glow) */
+button.btn-success {
+  background-color: #4caf50;
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+button.btn-success:hover {
+  background-color: #3e8e41;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+}
+
+/* ⚪ Outline Button for Contrast */
+button.btn-outline-light {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #e0e0e0;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+button.btn-outline-light:hover {
+  background-color: #eaeaea;
+  color: #1e1e2f;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* 💬 Subheading or Small Text */
+.subtext {
+  color: #bbbbbb;
+  font-size: 1rem;
+  margin-top: 10px;
+}
