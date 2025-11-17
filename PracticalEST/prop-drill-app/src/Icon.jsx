@@ -1,10 +1,10 @@
 import UserProfile from "./UserProfile";
 
-export default function Icon({ count }) {
+export default function Icon({ username }) {
   return (
     <div>
       <p>🔔 Icon Component</p>
-      <UserProfile count={count} />
+      <UserProfile username={username} />
     </div>
   );
 }

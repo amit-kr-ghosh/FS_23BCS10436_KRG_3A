@@ -1,16 +1,12 @@
-import { useState } from "react";
 import Header from "./Header";
 
 export default function App() {
-  const [count, setCount] = useState(0);
+  const username = "Amit_Ghosh";
 
   return (
     <div style={{ textAlign: "center", marginTop: "40px" }}>
-      <h1>Counter App + Prop Drilling</h1>
-      <h2>{count}</h2>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-      <hr />
-      <Header count={count} />
+      <h1>Prop Drilling Example</h1>
+      <Header username={username} />
     </div>
   );
 }
